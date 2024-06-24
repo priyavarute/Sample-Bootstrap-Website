@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar{
+    background-color: black !important;
+    box-shadow: 2px 2px 10px gray;
+    height: 10vh;
+    width: 99vw;
+
+}
+#navbarSupportedContent ul li a{
+    color: white;
+    padding: 50px;
+}
+
+/* Carousel */
+.carousel-item img{
+    height: 100vh;
+    background-size: cover;
+}
+
+/* Services */
+
+#services{
+    /* border: 1px solid red; */
+    height: 95vh;
+    width: 98vw;
+    /* margin-top: 100PX; */
+    /* border: 1PX solid red; */
+    /* background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); */
+}
+.services-left, .services-center,.services-right{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.services-card{
+    transition: all ease 0.5;
+}
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 20px;
+
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+  }
+
+
+
+  .flip-card-back {
+    background-color:black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip-card-front img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+  }
+
+  /* About Us */
+#about{
+  /* border: 1px solid red; */
+  width: 98vw;
+  height: 95vh;
+}
+
+/* Contact Us */
+
+.contact{
+  /* border: 1px solid red; */
+  height: 95vh;
+}
+/* .container{
+  border: 1px solid red;
+} */
+.Address,.callus,.Email{
+  border: 0.5px solid black;
+  text-align: center;
+  box-shadow: 2px 2px 5px gray;
+}
+#iframeid{
+  width: 600px;
+  height: 350px;
+  border: 0;
+  box-shadow: 2px 2px 5px gray;
+}
+
+/* Footer */
+.footer{
+  height: 20vh;
+  color: white;
+  width: 98vw;
+}
+
+.icon{
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
